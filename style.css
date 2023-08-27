@@ -8,7 +8,7 @@ body {
     src: url('font/zt-grafton-regular.ttf') format('truetype');
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1023px) {
     .bande-en-haut {
         color:white;
         display: block;
@@ -53,5 +53,52 @@ body {
     .image{
         margin-top: 20px;
         max-width: 250px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .bande-en-haut {
+        color:white;
+        display: block;
+        height: 150px; /* Hauteur de la bande */
+        background-color: #00B894; /* Couleur de la bande */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+      
+    .titre {
+        text-align: center;
+        font-family: 'Grafton';
+        margin-top: 50px;
+        font-size: 35px;
+    }
+
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 160px;
+    }
+
+    .product {
+        width: calc(33.33% - 10px); /* Pour créer de l'espace entre les produits */
+        margin-bottom: 20px;
+        background-color: #00b89324;
+        box-sizing: border-box;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+      
+    .price {
+        font-weight: bold;
+        color: #f00;
+    }
+
+    .image{
+        margin-top: 20px;
+        max-width: 100px;
     }
 }
